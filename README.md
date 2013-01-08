@@ -10,6 +10,12 @@ To specify a character set go to Random Text -> Charset and select an item from 
 
 To specify a length go to Random Text -> Length and select an item from the list, or set a custom length by going to Length -> Custom and typing in your own length at the prompt.
 
+Notes
+-----
+Default charset: Printable
+Default length: 32
+The printable charset does not contain whitespace characters or quotations, for ease of use whilst programming.
+
 Author
 ------
 Written by Dylan Allbee

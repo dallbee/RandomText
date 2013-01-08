@@ -13,6 +13,7 @@ class RandomTextGenerateCommand(sublime_plugin.TextCommand):
 
     def charset(self, name, length):
         if (name == 'printable'):
+            # Printable string without whitespace or quotations
             chars = string.printable.translate(None, string.whitespace + '\'"')
         elif (name == 'alphanumeric'):
             chars = string.letters + string.digits
@@ -23,6 +24,7 @@ class RandomTextGenerateCommand(sublime_plugin.TextCommand):
         else:
             chars = name
 
+        # Generate and concatenate random characters from the charset
         charset = ''.join(random.SystemRandom().choice(chars) for i in xrange(length))
 
         return charset
@@ -39,7 +41,6 @@ class SetRandomTextCharsetCommand(sublime_plugin.WindowCommand):
 
 
 class SetRandomTextLengthCommand(sublime_plugin.WindowCommand):
-
     def run(self):
         self.window.show_input_panel("Text Length:", "", self.on_done, None, None)
         pass
