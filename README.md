@@ -1,5 +1,5 @@
-Random Text Generator
-=====================
+Random Text
+===========
 A package for Sublime Text 2 that will generate random strings of arbitrary length and character sets.
 
 Usage
