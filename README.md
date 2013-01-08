@@ -13,7 +13,9 @@ To specify a length go to Random Text -> Length and select an item from the list
 Notes
 -----
 Default charset: Printable
+
 Default length: 32
+
 The printable charset does not contain whitespace characters or quotations, for ease of use whilst programming.
 
 Author
