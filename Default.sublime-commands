@@ -1,0 +1,16 @@
+[
+	{
+		"caption": "Generate Random Text",
+		"command": "random_text_generate"
+	},
+	{
+		"caption": "Set Random Text Charset",
+		"command": "random_text_alphanumeric"
+	},
+	{
+		"caption": "Set Random Text Length",
+		"command": "random_text_letters"
+	}
+]
+
+
