@@ -10,7 +10,7 @@
 			"platforms": {
 				"*": [
 					{
-						"version": "1.0.1sm",
+						"version": "1.0.1",
 						"url": "https://nodeload.github.com/dallbee/RandomText/zip/master"
 					}
 				]
