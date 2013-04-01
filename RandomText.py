@@ -25,7 +25,7 @@ class RandomTextGenerateCommand(sublime_plugin.TextCommand):
             chars = name
 
         # Generate and concatenate random characters from the charset
-        charset = ''.join(random.SystemRandom().choice(chars) for i in xrange(length))
+        charset = ''.join(random.SystemRandom().choice(chars) for i in range(length))
 
         return charset
 
