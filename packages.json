@@ -6,11 +6,11 @@
 			"description": "A package for Sublime Text 2 that will generate random strings of arbitrary length and character sets.",
 			"author": "Dylan Allbee",
 			"homepage": "https://github.com/dallbee/RandomText",
-			"last_modified": "2013-01-26 00:30:00",
+			"last_modified": "2013-04-02 00:09:00",
 			"platforms": {
 				"*": [
 					{
-						"version": "1.0.3",
+						"version": "1.0.4",
 						"url": "https://nodeload.github.com/dallbee/RandomText/zip/master"
 					}
 				]
