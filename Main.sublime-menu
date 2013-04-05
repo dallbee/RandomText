@@ -10,7 +10,7 @@
 		    	[
 		    		{
 		    			"caption": "Generate",
-		    			"command": "random_text_generate"
+		    			"command": "random_text"
 		    		},
 		    		{
 		    			"caption": "Charset",

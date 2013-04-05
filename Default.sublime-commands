@@ -1,7 +1,7 @@
 [
 	{
 		"caption": "Generate Random Text",
-		"command": "random_text_generate"
+		"command": "random_text"
 	},
 	{
 		"caption": "Set Random Text Charset",
@@ -12,5 +12,3 @@
 		"command": "random_text_letters"
 	}
 ]
-
-

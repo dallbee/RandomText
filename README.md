@@ -1,33 +1,50 @@
-Random Text
-===========
+# Random Text
+
 A package for Sublime Text that will generate random strings of arbitrary length and character sets.
 
-Usage
------
-To generate string, go to tools-> Random Text-> Generate.
+## Installation
 
-To specify a character set go to Random Text -> Charset and select an item from the list, or set a custom set by going to Charset -> Custom and typing in your own string of characters for the generator to use.
+If you are a git user, the best way to install this bundle and keep up to date is to clone the repo directly into your `Packages` directory in the Sublime Text 2 application settings area.
 
-To specify a length go to Random Text -> Length and select an item from the list, or set a custom length by going to Length -> Custom and typing in your own length at the prompt.
+### Package Control
 
-Notes
------
+Random Text is available via wbond's package control:
+
+	http://wbond.net/sublime_packages/package_control
+
+### Using Git
+
+Go to your Sublime Text `Packages` directory and clone the repository:
+
+    git clone https://github.com/dallbee/RandomText.git "Random Text"
+
+## Usage
+
+To generate string, go to Tools >> Random Text >> Generate.
+You may also use the keybinding `Ctrl + Shift + R` (Linux/Windows) or `Command + Shift + R` (OSX)
+
+To specify a character set go to `Tools >> Random Text >> Charset` and select an item from the list, or set a custom set by going to `Tools >> Random Text >> Charset >> Custom` and typing in your own string of characters for the generator to use.
+
+To specify a length go to `Tools >> Random Text >> Length` and select an item from the list, or set a custom length by going to `Tools >> Random Text >> Length >> Custom` and typing in your own length at the prompt.
+
+## Notes
+
 Default charset: Printable
 
 Default length: 32
 
 The printable charset does not contain whitespace characters or quotations, for ease of use whilst programming.
 
-Author
-------
+## Author
+
 Written by Dylan Allbee
 
-Credit
-------
+## Credit
+
 Thanks to Phalanxia from ##XAMPP on FreeNode for his help with testing
 
-BSD 2-Clause License
---------------------
+## BSD 2-Clause License
+
 Copyright (c) 2013, Dylan Allbee
 All rights reserved.
 

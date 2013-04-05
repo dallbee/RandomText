@@ -1,14 +1,16 @@
-import sublime_plugin
-import sublime
+# coding: utf-8
 import string
 import random
 
-class RandomTextGenerateCommand(sublime_plugin.TextCommand):
+import sublime_plugin
+
+class RandomTextCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         name = self.view.settings().get("random_text_charset", 'printable')
         length = self.view.settings().get("random_text_length", 32)
         text = self.charset(name, length)
-        self.view.insert(edit, self.view.sel()[0].begin(), text)
+        for r in self.view.sel():
+            self.view.replace(edit, r, text)
 
     def charset(self, name, length):
         if (name == 'printable'):
@@ -25,10 +27,8 @@ class RandomTextGenerateCommand(sublime_plugin.TextCommand):
             chars = string.digits
         else:
             chars = name
-
         # Generate and concatenate random characters from the charset
         charset = ''.join(random.SystemRandom().choice(chars) for i in range(length))
-
         return charset
 
 
