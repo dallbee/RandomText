@@ -4,12 +4,9 @@ A package for Sublime Text that will generate random strings of arbitrary length
 
 ## Installation
 
-If you are a git user, the best way to install this bundle and keep up to date is to clone the repo directly into your `Packages` directory in the Sublime Text 2 application settings area.
-
 ### Package Control
 
-Random Text is available via wbond's package control:
-[Package Control](http://wbond.net/sublime_packages/package_control)
+Random Text is available via [Will Bond's Package Control](http://wbond.net/sublime_packages/package_control)
 
 ### Using Git
 
@@ -19,7 +16,7 @@ Go to your Sublime Text `Packages` directory and clone the repository:
 
 ## Usage
 
-To generate string, go to Tools >> Random Text >> Generate.
+To generate string, go to `Tools >> Random Text >> Generate`.
 You may also use the keybinding `Ctrl + Shift + R` (Linux/Windows) or `Command + Shift + R` (OSX)
 
 To specify a character set go to `Tools >> Random Text >> Charset` and select an item from the list, or set a custom set by going to `Tools >> Random Text >> Charset >> Custom` and typing in your own string of characters for the generator to use.
@@ -28,11 +25,9 @@ To specify a length go to `Tools >> Random Text >> Length` and select an item fr
 
 ## Notes
 
-Default charset: Printable
-
-Default length: 32
-
-The printable charset does not contain whitespace characters or quotations, for ease of use whilst programming.
+- Default charset: Printable
+- Default length: 32
+- The printable charset does not contain whitespace characters or quotations, for ease of use whilst programming.
 
 ## Author
 
