@@ -26,7 +26,7 @@ class RandomTextCommand(sublime_plugin.TextCommand):
         elif (name == 'digits'):
             chars = string.digits
         elif (name == 'hexdigits'):
-            chars = string.hexdigits
+            chars = string.hexdigits.lower()
         else:
             chars = name
         # Generate and concatenate random characters from the charset
