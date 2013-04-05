@@ -3,147 +3,157 @@
 		"id": "tools",
 		"children":
 		[
-		    {
-		    	"id": "RandomText",
-		    	"caption": "Random Text",
-		    	"children":
-		    	[
-		    		{
-		    			"caption": "Generate",
-		    			"command": "random_text"
-		    		},
-		    		{
-		    			"caption": "Charset",
-		    			"children":
-		    			[
-		    				{
-				    			"caption": "Printable",
-				    			"command": "set_setting",
-				    			"args": 
-				    			{
-				    				"setting": "random_text_charset", 
-				    				"value": "printable"
-				    			},
-				    			"checkbox": "true"
-				    		},
-				    		{
-				    			"caption": "Alphanumeric",
-				    			"command": "set_setting",
-				    			"args": 
-				    			{
-				    				"setting": "random_text_charset", 
-				    				"value": "alphanumeric"
-				    			},
-				    			"checkbox": "true"
-				    		},
-				    		{
-				    			"caption": "Letters",
-				    			"command": "set_setting",
-				    			"args": 
-				    			{
-				    				"setting": "random_text_charset", 
-				    				"value": "letters"
-				    			},
-				    			"checkbox": "true"
-				    		},
-				    		{
-				    			"caption": "Digits",
-				    			"command": "set_setting",
-				    			"args": 
-				    			{
-				    				"setting": "random_text_charset", 
-				    				"value": "digits"
-				    			},
-				    			"checkbox": "true"
-				    		},
-				    		{
-				    			"caption": "Custom",
-				    			"command": "set_random_text_charset"
-				    		}
-		    			]
-		    		},
-		    		{
-		    			"caption": "Length",
-		    			"children":
-		    			[
-		    				{
-				    			"caption": "1",
-				    			"command": "set_setting",
-				    			"args": 
-				    			{
-				    				"setting": "random_text_length", 
-				    				"value": 1
-				    			},
-				    			"checkbox": "true"
-				    		},
-				    		{
-				    			"caption": "8",
-				    			"command": "set_setting",
-				    			"args": 
-				    			{
-				    				"setting": "random_text_length", 
-				    				"value": 8
-				    			},
-				    			"checkbox": "true"
-				    		},
-				    		{
-				    			"caption": "12",
-				    			"command": "set_setting",
-				    			"args": 
-				    			{
-				    				"setting": "random_text_length", 
-				    				"value": 12
-				    			},
-				    			"checkbox": "true"
-				    		},
-				    		{
-				    			"caption": "16",
-				    			"command": "set_setting",
-				    			"args": 
-				    			{
-				    				"setting": "random_text_length", 
-				    				"value": 16
-				    			},
-				    			"checkbox": "true"
-				    		},
-				    		{
-				    			"caption": "32",
-				    			"command": "set_setting",
-				    			"args": 
-				    			{
-				    				"setting": "random_text_length", 
-				    				"value": 32
-				    			},
-				    			"checkbox": "true"
-				    		},
-				    		{
-				    			"caption": "64",
-				    			"command": "set_setting",
-				    			"args": 
-				    			{
-				    				"setting": "random_text_length", 
-				    				"value": 64
-				    			},
-				    			"checkbox": "true"
-				    		},
-				    		{
-				    			"caption": "128",
-				    			"command": "set_setting",
-				    			"args": 
-				    			{
-				    				"setting": "random_text_length", 
-				    				"value": 128
-				    			},
-				    			"checkbox": "true"
-				    		},
-				    		{
-				    			"caption": "Custom",
-				    			"command": "set_random_text_length"
-				    		}
-		    			]
-		    		}
-		    	]
-		    }
+			{
+				"id": "RandomText",
+				"caption": "Random Text",
+				"children":
+				[
+					{
+						"caption": "Generate",
+						"command": "random_text"
+					},
+					{
+						"caption": "Charset",
+						"children":
+						[
+							{
+								"caption": "Printable",
+								"command": "set_setting",
+								"args": 
+								{
+									"setting": "random_text_charset", 
+									"value": "printable"
+								},
+								"checkbox": "true"
+							},
+							{
+								"caption": "Alphanumeric",
+								"command": "set_setting",
+								"args": 
+								{
+									"setting": "random_text_charset", 
+									"value": "alphanumeric"
+								},
+								"checkbox": "true"
+							},
+							{
+								"caption": "Letters",
+								"command": "set_setting",
+								"args": 
+								{
+									"setting": "random_text_charset", 
+									"value": "letters"
+								},
+								"checkbox": "true"
+							},
+							{
+								"caption": "Digits",
+								"command": "set_setting",
+								"args": 
+								{
+									"setting": "random_text_charset", 
+									"value": "digits"
+								},
+								"checkbox": "true"
+							},
+							{
+								"caption": "Hex Digits",
+								"command": "set_setting",
+								"args": 
+								{
+									"setting": "random_text_charset", 
+									"value": "hexdigits"
+								},
+								"checkbox": "true"
+							},
+							{
+								"caption": "Custom",
+								"command": "set_random_text_charset"
+							}
+						]
+					},
+					{
+						"caption": "Length",
+						"children":
+						[
+							{
+								"caption": "1",
+								"command": "set_setting",
+								"args": 
+								{
+									"setting": "random_text_length", 
+									"value": 1
+								},
+								"checkbox": "true"
+							},
+							{
+								"caption": "8",
+								"command": "set_setting",
+								"args": 
+								{
+									"setting": "random_text_length", 
+									"value": 8
+								},
+								"checkbox": "true"
+							},
+							{
+								"caption": "12",
+								"command": "set_setting",
+								"args": 
+								{
+									"setting": "random_text_length", 
+									"value": 12
+								},
+								"checkbox": "true"
+							},
+							{
+								"caption": "16",
+								"command": "set_setting",
+								"args": 
+								{
+									"setting": "random_text_length", 
+									"value": 16
+								},
+								"checkbox": "true"
+							},
+							{
+								"caption": "32",
+								"command": "set_setting",
+								"args": 
+								{
+									"setting": "random_text_length", 
+									"value": 32
+								},
+								"checkbox": "true"
+							},
+							{
+								"caption": "64",
+								"command": "set_setting",
+								"args": 
+								{
+									"setting": "random_text_length", 
+									"value": 64
+								},
+								"checkbox": "true"
+							},
+							{
+								"caption": "128",
+								"command": "set_setting",
+								"args": 
+								{
+									"setting": "random_text_length", 
+									"value": 128
+								},
+								"checkbox": "true"
+							},
+							{
+								"caption": "Custom",
+								"command": "set_random_text_length"
+							}
+						]
+					}
+				]
+			}
 		]
 	}
 ]

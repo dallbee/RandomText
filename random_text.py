@@ -22,9 +22,11 @@ class RandomTextCommand(sublime_plugin.TextCommand):
         elif (name == 'alphanumeric'):
             chars = string.letters + string.digits
         elif (name == 'letters'):
-            chars = string.letters
+            chars = string.ascii_letters
         elif (name == 'digits'):
             chars = string.digits
+        elif (name == 'hexdigits'):
+            chars = string.hexdigits
         else:
             chars = name
         # Generate and concatenate random characters from the charset
