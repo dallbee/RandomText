@@ -10,7 +10,7 @@ If you are a git user, the best way to install this bundle and keep up to date i
 
 Random Text is available via wbond's package control:
 
-	http://wbond.net/sublime_packages/package_control
+	[Package Control](http://wbond.net/sublime_packages/package_control)
 
 ### Using Git
 
