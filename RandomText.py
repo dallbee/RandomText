@@ -10,25 +10,26 @@ class RandomTextGenerateCommand(sublime_plugin.TextCommand):
         text = self.charset(name, length)
         self.view.insert(edit, self.view.sel()[0].begin(), text)
 
-    def charset(self, name, length):
-        if (name == 'printable'):
-            # Printable string without whitespace or quotations
-            for char in chars:
-                if char in string.whitespace + '\'"':
-                    chars = chars.replace(char,'')
-        elif (name == 'alphanumeric'):
-            chars = string.letters + string.digits
-        elif (name == 'letters'):
-            chars = string.letters
-        elif (name == 'digits'):
-            chars = string.digits
-        else:
-            chars = name
+def charset(name, length):
+    if (name == 'printable'):
+        # Printable string without whitespace or quotations
+        chars = string.printable
+        for char in chars:
+            if char in string.whitespace + '\'"':
+                chars = chars.replace(char,'')
+    elif (name == 'alphanumeric'):
+        chars = string.letters + string.digits
+    elif (name == 'letters'):
+        chars = string.letters
+    elif (name == 'digits'):
+        chars = string.digits
+    else:
+        chars = name
 
-        # Generate and concatenate random characters from the charset
-        charset = ''.join(random.SystemRandom().choice(chars) for i in range(length))
+    # Generate and concatenate random characters from the charset
+    charset = ''.join(random.SystemRandom().choice(chars) for i in range(length))
 
-        return charset
+    return charset
 
 
 class SetRandomTextCharsetCommand(sublime_plugin.WindowCommand):
