@@ -1,6 +1,6 @@
 Random Text
 ===========
-A package for Sublime Text 2 that will generate random strings of arbitrary length and character sets.
+A package for Sublime Text that will generate random strings of arbitrary length and character sets.
 
 Usage
 -----
