@@ -3,7 +3,6 @@ import sublime
 import string
 import random
 
-
 class RandomTextGenerateCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         name = self.view.settings().get("random_text_charset", 'printable')
@@ -14,7 +13,9 @@ class RandomTextGenerateCommand(sublime_plugin.TextCommand):
     def charset(self, name, length):
         if (name == 'printable'):
             # Printable string without whitespace or quotations
-            chars = string.printable.translate(None, string.whitespace + '\'"')
+            for char in chars:
+                if char in string.whitespace + '\'"':
+                    chars = chars.replace(char,'')
         elif (name == 'alphanumeric'):
             chars = string.letters + string.digits
         elif (name == 'letters'):
