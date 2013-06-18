@@ -3,11 +3,24 @@ import string
 import random
 
 import sublime_plugin
+import sublime
+
 
 class RandomTextCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-        name = self.view.settings().get("random_text_charset", 'printable')
-        length = self.view.settings().get("random_text_length", 32)
+        settings = sublime.load_settings("RandomText.sublime-settings")
+        default_name = settings.get('default_text_set', 'printable')
+        default_length = settings.get('random_text_length', 32)
+
+        name = self.view.settings().get("random_text_charset", default_name)
+        length = self.view.settings().get("random_text_length", default_length)
+
+        if name == 'default':
+            name = default_name
+
+        if length == 0:
+            length = default_length
+
         text = self.charset(name, length)
         for r in self.view.sel():
             self.view.replace(edit, r, text)
@@ -18,7 +31,7 @@ class RandomTextCommand(sublime_plugin.TextCommand):
             chars = string.printable
             for char in chars:
                 if char in string.whitespace + '\'"':
-                    chars = chars.replace(char,'')
+                    chars = chars.replace(char, '')
         elif (name == 'alphanumeric'):
             chars = string.letters + string.digits
         elif (name == 'letters'):

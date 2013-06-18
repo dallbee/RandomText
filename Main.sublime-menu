@@ -19,9 +19,9 @@
 							{
 								"caption": "Printable",
 								"command": "set_setting",
-								"args": 
+								"args":
 								{
-									"setting": "random_text_charset", 
+									"setting": "random_text_charset",
 									"value": "printable"
 								},
 								"checkbox": "true"
@@ -29,9 +29,9 @@
 							{
 								"caption": "Alphanumeric",
 								"command": "set_setting",
-								"args": 
+								"args":
 								{
-									"setting": "random_text_charset", 
+									"setting": "random_text_charset",
 									"value": "alphanumeric"
 								},
 								"checkbox": "true"
@@ -39,9 +39,9 @@
 							{
 								"caption": "Letters",
 								"command": "set_setting",
-								"args": 
+								"args":
 								{
-									"setting": "random_text_charset", 
+									"setting": "random_text_charset",
 									"value": "letters"
 								},
 								"checkbox": "true"
@@ -49,9 +49,9 @@
 							{
 								"caption": "Digits",
 								"command": "set_setting",
-								"args": 
+								"args":
 								{
-									"setting": "random_text_charset", 
+									"setting": "random_text_charset",
 									"value": "digits"
 								},
 								"checkbox": "true"
@@ -59,16 +59,27 @@
 							{
 								"caption": "Hex Digits",
 								"command": "set_setting",
-								"args": 
+								"args":
 								{
-									"setting": "random_text_charset", 
+									"setting": "random_text_charset",
 									"value": "hexdigits"
 								},
 								"checkbox": "true"
 							},
 							{
 								"caption": "Custom",
-								"command": "set_random_text_charset"
+								"command": "set_random_text_charset",
+								"checkbox": "true"
+							},
+							{
+								"caption": "Default",
+								"command": "set_setting",
+								"args":
+								{
+									"setting": "random_text_charset",
+									"value": "default"
+								},
+								"checkbox": "true"
 							}
 						]
 					},
@@ -79,9 +90,9 @@
 							{
 								"caption": "1",
 								"command": "set_setting",
-								"args": 
+								"args":
 								{
-									"setting": "random_text_length", 
+									"setting": "random_text_length",
 									"value": 1
 								},
 								"checkbox": "true"
@@ -89,9 +100,9 @@
 							{
 								"caption": "8",
 								"command": "set_setting",
-								"args": 
+								"args":
 								{
-									"setting": "random_text_length", 
+									"setting": "random_text_length",
 									"value": 8
 								},
 								"checkbox": "true"
@@ -99,9 +110,9 @@
 							{
 								"caption": "12",
 								"command": "set_setting",
-								"args": 
+								"args":
 								{
-									"setting": "random_text_length", 
+									"setting": "random_text_length",
 									"value": 12
 								},
 								"checkbox": "true"
@@ -109,9 +120,9 @@
 							{
 								"caption": "16",
 								"command": "set_setting",
-								"args": 
+								"args":
 								{
-									"setting": "random_text_length", 
+									"setting": "random_text_length",
 									"value": 16
 								},
 								"checkbox": "true"
@@ -119,9 +130,9 @@
 							{
 								"caption": "32",
 								"command": "set_setting",
-								"args": 
+								"args":
 								{
-									"setting": "random_text_length", 
+									"setting": "random_text_length",
 									"value": 32
 								},
 								"checkbox": "true"
@@ -129,9 +140,9 @@
 							{
 								"caption": "64",
 								"command": "set_setting",
-								"args": 
+								"args":
 								{
-									"setting": "random_text_length", 
+									"setting": "random_text_length",
 									"value": 64
 								},
 								"checkbox": "true"
@@ -139,9 +150,9 @@
 							{
 								"caption": "128",
 								"command": "set_setting",
-								"args": 
+								"args":
 								{
-									"setting": "random_text_length", 
+									"setting": "random_text_length",
 									"value": 128
 								},
 								"checkbox": "true"
@@ -149,11 +160,53 @@
 							{
 								"caption": "Custom",
 								"command": "set_random_text_length"
+							},
+							{
+								"caption": "Default",
+								"command": "set_setting",
+								"args":
+								{
+									"setting": "random_text_length",
+									"value": 0
+								},
+								"checkbox": "true"
 							}
 						]
 					}
 				]
 			}
 		]
-	}
+	},
+	{
+        "caption": "Preferences",
+        "mnemonic": "n",
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "RandomText",
+                        "children":
+                        [
+                            {
+                                "command": "open_file",
+                                "args": {"file": "${packages}/Random Text/RandomText.sublime-settings"},
+                                "caption": "Settings – Default"
+                            },
+                            {
+                                "command": "open_file",
+                                "args": {"file": "${packages}/User/RandomText.sublime-settings"},
+                                "caption": "Settings – User"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
 ]
