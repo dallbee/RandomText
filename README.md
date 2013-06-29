@@ -36,7 +36,8 @@ Written by Dylan Allbee
 ## Credit
 
 Phalanxia from ##XAMPP on FreeNode for his help with testing
-Shawn Butts for adding support for configuration files http://github.com/shawnbutts
+
+[Shawn Butts](https://github.com/shawnbutts) for adding support for configuration files 
 
 ## BSD 2-Clause License
 
