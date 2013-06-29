@@ -1,0 +1,8 @@
+{
+  // Default text set
+  "default_text_set": "printable",
+
+  // Default text length
+  "random_text_length": 32
+
+}
