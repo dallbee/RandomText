@@ -9,14 +9,14 @@ import sublime
 class RandomTextCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         settings = sublime.load_settings("RandomText.sublime-settings")
-        default_name = settings.get('default_text_set', 'printable')
+        default_set = settings.get('default_text_set', 'printable')
         default_length = settings.get('random_text_length', 32)
 
-        name = self.view.settings().get("random_text_charset", default_name)
+        name = self.view.settings().get("random_text_charset", default_set)
         length = self.view.settings().get("random_text_length", default_length)
 
         if name == 'default':
-            name = default_name
+            name = default_set
 
         if length == 0:
             length = default_length
