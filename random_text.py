@@ -33,7 +33,7 @@ class RandomTextCommand(sublime_plugin.TextCommand):
                 if char in string.whitespace + '\'"':
                     chars = chars.replace(char, '')
         elif (name == 'alphanumeric'):
-            chars = string.letters + string.digits
+            chars = string.ascii_letters + string.digits
         elif (name == 'letters'):
             chars = string.ascii_letters
         elif (name == 'digits'):
