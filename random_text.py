@@ -21,8 +21,8 @@ class RandomTextCommand(sublime_plugin.TextCommand):
         if length == 0:
             length = default_length
 
-        text = self.charset(name, length)
         for r in self.view.sel():
+            text = self.charset(name, length)
             self.view.replace(edit, r, text)
 
     def charset(self, name, length):
